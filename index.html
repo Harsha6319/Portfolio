@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P. Harsha Praneeth | Developer Portfolio</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Load Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        /* Custom styles for dark mode typography and background */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0F172A; /* Slate 900 */
+            color: #e2e8f0; /* Default light text */
+        }
+        /* Custom class for the skill icons */
+        .skill-icon-card {
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .skill-icon-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.4), 0 4px 6px -2px rgba(0, 0, 0, 0.2); /* Darker shadow for contrast */
+        }
+        
+        /* Adjust scroll margin for sections so the navbar doesn't cover headings */
+        section {
+            scroll-margin-top: 100px; /* Ensures headings land below the sticky nav */
+        }
+    </style>
+</head>
+<body class="min-h-screen antialiased">
+
+    <!-- Navigation Bar -->
+    <nav class="fixed top-0 left-0 w-full bg-gray-900/90 backdrop-blur-sm border-b border-gray-800 z-50 shadow-lg">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <!-- Logo / Name (Home Link) -->
+                <div class="flex-shrink-0">
+                    <a href="#" class="text-white font-bold text-lg hover:text-indigo-400 transition">
+                        Portfolio
+                    </a>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="#about" class="text-gray-300 hover:text-white hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium transition">About</a>
+                        <a href="#hackathons" class="text-gray-300 hover:text-white hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium transition">Hackathons</a>
+                        <a href="#education" class="text-gray-300 hover:text-white hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium transition">Education</a>
+                        <a href="#skills" class="text-gray-300 hover:text-white hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium transition">Skills</a>
+                        <a href="#projects" class="text-gray-300 hover:text-white hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium transition">Projects</a>
+                        <a href="#contact" class="text-gray-300 hover:text-white hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium transition">Contact</a>
+                    </div>
+                </div>
+                
+                <!-- Mobile Menu Button (Simple implementation) -->
+                <div class="md:hidden flex items-center">
+                   <a href="#contact" class="text-sm text-indigo-400 font-semibold mr-2">Contact</a>
+                   <a href="mailto:harsha6319@gmail.com" class="p-2 text-gray-400 hover:text-white">
+                       <i data-lucide="mail" class="w-5 h-5"></i>
+                   </a>
+                </div>
+            </div>
+        </div>
+        <!-- Simple Mobile Navigation Links Row (Visible only on small screens) -->
+        <div class="md:hidden border-t border-gray-800 bg-gray-900 px-2 py-2 flex justify-around text-xs">
+            <a href="#about" class="text-gray-400 hover:text-white p-2">About</a>
+            <a href="#hackathons" class="text-gray-400 hover:text-white p-2">Hackathons</a>
+            <a href="#skills" class="text-gray-400 hover:text-white p-2">Skills</a>
+            <a href="#projects" class="text-gray-400 hover:text-white p-2">Projects</a>
+        </div>
+    </nav>
+
+    <!-- Main Content Container -->
+    <!-- The pt-24 class pushes this container down below the fixed navbar. -->
+    <div class="max-w-4xl mx-auto p-4 sm:p-6 lg:p-8 pt-24 mt-10">
+
+        <!-- Header and Profile Section -->
+        <header class="text-center mb-12 bg-gray-800 p-8 rounded-xl shadow-lg">
+            <!-- Profile Image -->
+            <div class="w-32 h-32 mx-auto rounded-full overflow-hidden mb-6 border-4 border-indigo-500/50 shadow-md">
+                <!-- Image URL updated from the context -->
+                <img src="https://res.cloudinary.com/dswnjw2h1/image/upload/v1765292375/Gemini_Generated_Image_vikexivikexivike_tycaun.png"
+                     alt="P. Harsha Praneeth Profile Photo"
+                     class="w-full h-full object-cover">
+            </div>
+
+            <!-- Name and Title -->
+            <h1 class="text-4xl font-extrabold text-white mb-2">P. Harsha Praneeth</h1>
+            <p class="text-xl font-medium text-indigo-400">1st Year CSE Student | Aspiring Developer Intern</p>
+            
+            <!-- Social Links (NEW/UPDATED) -->
+            <div class="mt-4 flex justify-center items-center space-x-6 text-gray-400">
+                <a href="https://github.com/YourGitHubUsername" target="_blank" class="flex items-center hover:text-white transition duration-150 group">
+                    <i data-lucide="github" class="w-6 h-6 mr-1 group-hover:text-indigo-400"></i>
+                    <span class="text-sm hidden sm:inline">GitHub</span>
+                </a>
+                <a href="https://linkedin.com/in/YourLinkedInProfile" target="_blank" class="flex items-center hover:text-white transition duration-150 group">
+                    <i data-lucide="linkedin" class="w-6 h-6 mr-1 group-hover:text-indigo-400"></i>
+                    <span class="text-sm hidden sm:inline">LinkedIn</span>
+                </a>
+            </div>
+        </header>
+
+        <!-- About Section -->
+        <section id="about" class="mb-12 scroll-mt-24">
+            <h2 class="text-3xl font-bold text-white border-b-2 border-indigo-500 pb-2 mb-6">About Me</h2>
+            <div class="bg-gray-800 p-6 rounded-xl shadow-lg">
+                <p class="text-gray-300 leading-relaxed">
+                    I am a highly motivated **1st-year Computer Science Engineering (CSE) student** actively seeking a Software Development Internship. I am passionate about self-learning, having independently acquired strong skills in **Python, HTML, CSS, and JavaScript**, including experience with front-end frameworks like **Tailwind CSS and Bootstrap**.
+                </p>
+                <p class="text-gray-300 leading-relaxed mt-3">
+                    My practical experience includes building the **"SmartFarm"** website and participating in both a **Hackathon** (developing an app using Base 44 AI) and an **Ideathon**, demonstrating my ability to move seamlessly from conceptualization to execution. I learn quickly and am eager to contribute immediately in a professional development environment.
+                </p>
+            </div>
+        </section>
+        
+        <!-- Hackathons & Achievements Section -->
+        <section id="hackathons" class="mb-12 scroll-mt-24">
+            <h2 class="text-3xl font-bold text-white border-b-2 border-indigo-500 pb-2 mb-6">Hackathons & Achievements</h2>
+            
+            <!-- Base 44 Hackathon Card -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="bg-gray-800 p-6 rounded-xl shadow-lg border-l-4 border-yellow-500">
+                    <h3 class="text-xl font-semibold text-white mb-2">Base 44 Hackathon Participant</h3>
+                    <p class="text-gray-300 mb-3">
+                        Developed an application utilizing the **Base 44 AI** platform, demonstrating hands-on knowledge in:
+                    </p>
+                    <ul class="list-disc list-inside ml-4 text-gray-400 mb-3">
+                        <li>Rapid Prototyping and Development</li>
+                        <li>Integrating AI/ML features into a functional application</li>
+                    </ul>
+                    <div class="flex flex-wrap items-center space-x-4 mt-3">
+                        <span class="text-sm font-medium text-yellow-400 bg-yellow-900/30 px-3 py-1 rounded-full">AI/ML Development</span>
+                        <a href="https://quick-gig-copy-cb871498.base44.app" target="_blank" class="flex items-center text-sm font-medium text-gray-400 hover:text-yellow-400 transition duration-150">
+                            <i data-lucide="link" class="w-4 h-4 mr-1"></i>
+                            View Live App
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Ideathon Participation Card -->
+                <div class="bg-gray-800 p-6 rounded-xl shadow-lg border-l-4 border-teal-500">
+                    <h3 class="text-xl font-semibold text-white mb-2">Ideathon Participation</h3>
+                    <p class="text-gray-300 mb-3">
+                        Participated in an Ideathon event focused on creative technological problem-solving. This activity strengthened skills in:
+                    </p>
+                    <ul class="list-disc list-inside ml-4 text-gray-400">
+                        <li>Conceptualizing innovative solutions</li>
+                        <li>Structuring and presenting technical ideas</li>
+                    </ul>
+                    <span class="mt-3 inline-block text-sm font-medium text-teal-400 bg-teal-900/30 px-3 py-1 rounded-full">Concept & Strategy Development</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="mb-12 scroll-mt-24">
+            <h2 class="text-3xl font-bold text-white border-b-2 border-indigo-500 pb-2 mb-6">Education</h2>
+            <div class="bg-gray-800 p-6 rounded-xl shadow-lg">
+                <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center">
+                    <div>
+                        <h3 class="text-xl font-semibold text-white">Computer Science Engineering (CSE) Program (1st Year)</h3>
+                        <p class="text-indigo-400">**NxtWave Institute of Advanced Technologies (NIAT)**, Hyderabad</p>
+                        <p class="text-gray-400 text-sm mt-1">Currently enrolled and actively seeking internship opportunities.</p>
+                    </div>
+                    <p class="text-gray-400 mt-2 sm:mt-0 sm:text-right">Ongoing</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="mb-12 scroll-mt-24">
+            <h2 class="text-3xl font-bold text-white border-b-2 border-indigo-500 pb-2 mb-6">Technical Skills</h2>
+
+            <!-- Grid for Core Skills -->
+            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
+                <!-- Python -->
+                <div class="skill-icon-card bg-gray-700 p-4 flex flex-col items-center justify-center rounded-xl shadow-lg border border-gray-700">
+                    <i data-lucide="brain-circuit" class="w-8 h-8 text-indigo-400 mb-2"></i>
+                    <p class="font-semibold text-sm text-gray-200">Python</p>
+                </div>
+
+                <!-- HTML5 -->
+                <div class="skill-icon-card bg-gray-700 p-4 flex flex-col items-center justify-center rounded-xl shadow-lg border border-gray-700">
+                    <i data-lucide="code" class="w-8 h-8 text-orange-400 mb-2"></i>
+                    <p class="font-semibold text-sm text-gray-200">HTML5</p>
+                </div>
+
+                <!-- CSS -->
+                <div class="skill-icon-card bg-gray-700 p-4 flex flex-col items-center justify-center rounded-xl shadow-lg border border-gray-700">
+                    <i data-lucide="palette" class="w-8 h-8 text-blue-400 mb-2"></i>
+                    <p class="font-semibold text-sm text-gray-200">CSS</p>
+                </div>
+
+                <!-- JavaScript -->
+                <div class="skill-icon-card bg-gray-700 p-4 flex flex-col items-center justify-center rounded-xl shadow-lg border border-gray-700">
+                    <i data-lucide="zap" class="w-8 h-8 text-yellow-400 mb-2"></i>
+                    <p class="font-semibold text-sm text-gray-200">JavaScript</p>
+                </div>
+
+                <!-- Tailwind CSS -->
+                <div class="skill-icon-card bg-gray-700 p-4 flex flex-col items-center justify-center rounded-xl shadow-lg border border-gray-700">
+                    <i data-lucide="sparkles" class="w-8 h-8 text-cyan-400 mb-2"></i>
+                    <p class="font-semibold text-sm text-gray-200">Tailwind</p>
+                </div>
+                
+                <!-- Bootstrap -->
+                <div class="skill-icon-card bg-gray-700 p-4 flex flex-col items-center justify-center rounded-xl shadow-lg border border-gray-700">
+                    <i data-lucide="layout-dashboard" class="w-8 h-8 text-violet-400 mb-2"></i>
+                    <p class="font-semibold text-sm text-gray-200">Bootstrap</p>
+                </div>
+            </div>
+
+            <!-- Tools and Platforms (NEW TEXT) -->
+            <p class="mt-8 text-sm text-gray-400 text-center border-t border-gray-700 pt-4">
+                **Tools & Platforms:** Proficient in version control using **Git/GitHub**. Developing on platforms like **VS Code**.
+            </p>
+        </section>
+
+        <!-- Projects/Experience -->
+        <section id="projects" class="mb-12 scroll-mt-24">
+            <h2 class="text-3xl font-bold text-white border-b-2 border-indigo-500 pb-2 mb-6">Key Projects</h2>
+
+            <!-- SmartFarm Project Card -->
+            <div class="bg-gray-800 p-6 rounded-xl shadow-lg border-l-4 border-indigo-500 mb-4">
+                <h3 class="text-xl font-semibold text-white mb-2">SmartFarm Website</h3>
+                <p class="text-gray-300 mb-3">
+                    A self-initiated web project demonstrating fundamental front-end development skills (HTML & CSS), completed just three months into my engineering program. **Goal:** To create a fully responsive, clean interface.
+                </p>
+                <div class="flex flex-wrap items-center space-x-4">
+                    <span class="text-sm font-medium text-indigo-400 bg-indigo-900/50 px-3 py-1 rounded-full">Front-End Development</span>
+                    <a href="https://dhhsdhdt-gjhgg.github.io/SmartFarm/" target="_blank" class="flex items-center text-sm font-medium text-gray-400 hover:text-indigo-400 transition duration-150">
+                        <i data-lucide="link" class="w-4 h-4 mr-1"></i>
+                        View Live Project
+                    </a>
+                </div>
+            </div>
+
+            <!-- Placeholder for Future Projects -->
+            <div class="bg-gray-700 p-6 rounded-xl text-center border-dashed border-2 border-gray-600">
+                <p class="text-gray-400 italic">
+                    Use this space to add more detailed project cards showcasing your Python, Database, or JavaScript work.
+                </p>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="mb-12 scroll-mt-24">
+            <h2 class="text-3xl font-bold text-white border-b-2 border-indigo-500 pb-2 mb-6">Contact Information</h2>
+            <div class="bg-gray-800 p-8 rounded-xl shadow-lg text-center">
+                <p class="text-gray-300 text-lg mb-4">
+                    I am actively looking for software development internship opportunities and am based in Hyderabad.
+                </p>
+                <div class="flex flex-col items-center space-y-3">
+                    <div class="inline-flex items-center text-xl font-semibold text-indigo-400">
+                        <i data-lucide="map-pin" class="w-6 h-6 mr-2"></i>
+                        Hyderabad, India
+                    </div>
+                    <a href="mailto:harsha6319@gmail.com" class="inline-flex items-center text-xl font-semibold text-indigo-400 hover:text-indigo-300 transition duration-150">
+                        <i data-lucide="mail" class="w-6 h-6 mr-2"></i>
+                        harsha6319@gmail.com
+                    </a>
+                    <!-- Placeholder Resume Link (NEW) -->
+                    <a href="/harsha_praneeth_resume.pdf" target="_blank" class="inline-flex items-center px-6 py-2 bg-indigo-600 text-white font-medium rounded-lg hover:bg-indigo-700 transition duration-200 shadow-md mt-4">
+                        <i data-lucide="file-text" class="w-5 h-5 mr-2"></i>
+                        Download Resume (PDF)
+                    </a>
+                </div>
+                <p class="text-gray-500 text-sm mt-4">
+                    Feel free to reach out via email for any inquiries or collaborations.
+                </p>
+            </div>
+        </section>
+
+
+        <!-- Footer -->
+        <footer class="mt-12 text-center text-gray-500 border-t border-gray-700 pt-6">
+            <p>&copy; <span id="currentYear"></span> P. Harsha Praneeth. Built with modern web technologies.</p>
+        </footer>
+    </div>
+
+    <!-- JavaScript to initialize Lucide icons and set the current year -->
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+
+        // Set current year in the footer
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
