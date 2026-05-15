@@ -561,15 +561,15 @@ body::after {
 
 /* Project Screenshots */
 .project-img.rps-bg {
-    background-image: url('assets/proj_rps.png');
+    background-image: url('proj_rps.png');
 }
 
 .project-img.ttt-bg {
-    background-image: url('assets/proj_ttt.png');
+    background-image: url('proj_ttt.png');
 }
 
 .project-img.curr-bg {
-    background-image: url('assets/proj_curr.png');
+    background-image: url('proj_curr.png');
 }
 
 .project-tech {
