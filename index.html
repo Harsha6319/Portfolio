@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Harsha - Web Designer and Front-end Developer Portfolio">
+    <title>Harsha - Web Designer & Front-end Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="navbar hidden-on-load">
+        <div class="logo"><span class="accent">#</span>Harsha</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home"><span class="accent">#</span>home</a></li>
+                <li><a href="#works"><span class="accent">#</span>works</a></li>
+                <li><a href="#skills"><span class="accent">#</span>skills</a></li>
+                <li><a href="#about-me"><span class="accent">#</span>about-me</a></li>
+                <li><a href="#contacts"><span class="accent">#</span>contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero section">
+            <!-- Framer Sparks -->
+            <div class="framer-sparkle s1"></div>
+            <div class="framer-sparkle s2"></div>
+            <div class="framer-sparkle s3"></div>
+            <div class="framer-sparkle s4"></div>
+            <img src="https://framerusercontent.com/images/K87K8oWoMPCJBJmyQKbXXvzbxdA.png" class="small_logo">
+            <div class="hero-content">
+                <h1 class="stagger-1 text-reveal">Harsha is a <br /><span class="highlight dynamic-title"></span><span
+                        class="cursor"
+                        style="border-right: 3px solid var(--primary-color); padding-left: 2px; animation: blink 0.75s step-end infinite;">&nbsp;</span>
+                </h1>
+                <p class="stagger-2 text-reveal" style="max-width: 90%;">Passionate about building scalable software and
+                    delivering curated, high-performance digital experiences.</p>
+                <a href="#contacts" class="btn btn-primary stagger-3 text-reveal">Contact me !!</a>
+            </div>
+            <div class="hero-illustration stagger-4 text-reveal">
+                <div class="hero-img-placeholder">
+                    <img src="assets/hero_img.png" alt="Developer Illustration"
+                        style="max-width: 100%; border-radius: 8px;">
+                </div>
+            </div>
+        </section>
+
+        <!-- Quote -->
+        <section class="quote-section section animate-on-scroll">
+            <div class="quote-box">
+                <p id="dynamic-quote">With great power comes great electricity bill</p>
+                <div id="dynamic-quote-author" class="quote-author">- Dr. Who</div>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section id="works" class="projects section animate-on-scroll">
+            <div class="section-header">
+                <h2><span class="accent">#</span>projects</h2>
+                <a href="projects.html" class="view-all">View all ~~></a>
+            </div>
+            <div class="projects-grid">
+                <!-- Card 1 -->
+                <div class="project-card animate-card" style="transition-delay: 0.1s">
+                    <div class="project-img rps-bg"></div>
+                    <div class="project-tech"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+                    <div class="project-info">
+                        <h3>Rock Paper Scissors</h3>
+                        <p>Interactive web-based game against computer</p>
+                        <a href="https://harsha6319.github.io/Rock_Paper_Scissor_game_JS/" target="_blank" class="btn btn-outline">Live &lt;~&gt;</a>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="project-card animate-card" style="transition-delay: 0.2s">
+                    <div class="project-img ttt-bg"></div>
+                    <div class="project-tech"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+                    <div class="project-info">
+                        <h3>Tic-Tac-Toe</h3>
+                        <p>Classic Grid Game with win-state logic</p>
+                        <a href="https://harsha6319.github.io/Tic_Tac_Toe_game_JS/" target="_blank" class="btn btn-outline">Live &lt;~&gt;</a>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="project-card animate-card" style="transition-delay: 0.3s">
+                    <div class="project-img curr-bg"></div>
+                    <div class="project-tech"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+                    <div class="project-info">
+                        <h3>Currency Converter</h3>
+                        <p>Live exchange rate calculator API integration</p>
+                        <a href="https://harsha6319.github.io/Currency_Converter_JS/" target="_blank" class="btn btn-outline">Live &lt;~&gt;</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Marquee / Ticker -->
+        <div class="marquee-section">
+            <div class="marquee-container">
+                <div class="marquee-content">
+                    <span>JavaScript <span class="accent">✦</span></span>
+                    <span>Python <span class="accent">✦</span></span>
+                    <span>React <span class="accent">✦</span></span>
+                    <span>Node.js <span class="accent">✦</span></span>
+                    <span>MongoDB <span class="accent">✦</span></span>
+                    <span>MySQL <span class="accent">✦</span></span>
+                    <span>Tailwind <span class="accent">✦</span></span>
+                    <span>xClaude AI <span class="accent">✦</span></span>
+                    <!-- Duplicate for seamless loop -->
+                    <span>JavaScript <span class="accent">✦</span></span>
+                    <span>Python <span class="accent">✦</span></span>
+                    <span>React <span class="accent">✦</span></span>
+                    <span>Node.js <span class="accent">✦</span></span>
+                    <span>MongoDB <span class="accent">✦</span></span>
+                    <span>MySQL <span class="accent">✦</span></span>
+                    <span>Tailwind <span class="accent">✦</span></span>
+                    <span>xClaude AI <span class="accent">✦</span></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Skills -->
+        <section id="skills" class="skills section animate-on-scroll">
+            <div class="section-header">
+                <h2><span class="accent">#</span>skills</h2>
+            </div>
+            <div class="skills-content">
+                <div class="skills-illustration shapes-container">
+                    <div class="square-grid">
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                    </div>
+                    <div class="outline-box"></div>
+                    <div class="outline-box small"></div>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-box animate-scale" style="transition-delay: 0.1s">
+                        <div class="skill-title">Languages</div>
+                        <div class="skill-items">
+                            <span class="syn-tag">Python</span> <span class="syn-keyword">JavaScript</span> <span
+                                class="syn-var">HTML</span> <span class="syn-func">CSS</span>
+                        </div>
+                    </div>
+                    <div class="skill-box animate-scale" style="transition-delay: 0.2s">
+                        <div class="skill-title">Databases</div>
+                        <div class="skill-items">
+                            <span class="syn-num">MongoDB</span> <span class="syn-func">MySQL</span> <span
+                                class="syn-string">SQLite</span>
+                        </div>
+                    </div>
+                    <div class="skill-box animate-scale" style="transition-delay: 0.3s">
+                        <div class="skill-title">Frameworks</div>
+                        <div class="skill-items">
+                            <span class="syn-keyword">React.js</span> <span class="syn-string">Node.js</span> <span
+                                class="syn-tag">Express.js</span> <span class="syn-punct">Tailwind</span> <span
+                                class="syn-var">Bootstrap</span>
+                        </div>
+                    </div>
+                    <div class="skill-box animate-scale" style="transition-delay: 0.4s">
+                        <div class="skill-title">MERN Stack</div>
+                        <div class="skill-items">
+                            <span class="syn-num">MongoDB</span> <span class="syn-func">Express.js</span> <span
+                                class="syn-keyword">React.js</span> <span class="syn-string">Node.js</span>
+                        </div>
+                    </div>
+                    <div class="skill-box animate-scale" style="transition-delay: 0.5s">
+                        <div class="skill-title">AI & Tools</div>
+                        <div class="skill-items">
+                            <span class="syn-var">Codex</span> <span class="syn-tag">Claude AI</span> <span
+                                class="syn-func">ChatGPT</span> <span class="syn-punct">Many Other AI...</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Me -->
+        <section id="about-me" class="about-me section animate-on-scroll">
+            <div class="section-header">
+                <h2><span class="accent">#</span>about-me</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Hello, i'm Harsha!</p>
+                    <p>Currently pursuing software development at NxtWave Institute of Advanced Technologies (NIAT),
+                        building a strong foundation in MERN stack, Python, and SQL.</p>
+                    <p>I am highly curious and eager to learn new technologies, consistently exploring AI-driven
+                        systems, automation, and entrepreneurship to build scalable, real-world products.</p>
+                    <a href="about.html" class="btn btn-outline">Read more -></a>
+                </div>
+                <div class="about-illustration">
+                    <img src="assets/about_img.png" alt="Harsha Image Placeholder"
+                        style="max-width: 100%; border-radius: 8px;">
+                </div>
+            </div>
+        </section>
+
+        <!-- Contacts -->
+        <section id="contacts" class="contacts section animate-on-scroll">
+            <div class="section-header">
+                <h2><span class="accent">#</span>contacts</h2>
+            </div>
+            <div class="contacts-wrapper">
+                <div class="contacts-text">
+                    <p>I'm interested in freelance opportunities. However, if you have other request or question, don't
+                        hesitate to contact me</p>
+                </div>
+                <div class="contacts-links-grid animate-scale" style="transition-delay: 0.2s">
+                    <a href="mailto:harsha6319@gmail.com" class="social-card">
+                        <div class="social-icon">
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" width="20" height="20"
+                                stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div class="social-info">
+                            <h4>Email Me</h4>
+                            <span>harsha6319@gmail.com</span>
+                        </div>
+                    </a>
+                    <a href="https://www.linkedin.com/in/harsha-praneeth-446b1736b" target="_blank" class="social-card">
+                        <div class="social-icon">
+                            <svg fill="currentColor" viewBox="0 0 24 24" width="20" height="20">
+                                <path
+                                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                            </svg>
+                        </div>
+                        <div class="social-info">
+                            <h4>LinkedIn</h4>
+                            <span>harsha-praneeth-446b1736b</span>
+                        </div>
+                    </a>
+                    <a href="https://github.com/Harsha6319" target="_blank" class="social-card">
+                        <div class="social-icon">
+                            <svg fill="currentColor" viewBox="0 0 24 24" width="20" height="20">
+                                <path
+                                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                            </svg>
+                        </div>
+                        <div class="social-info">
+                            <h4>GitHub</h4>
+                            <span>Harsha6319</span>
+                        </div>
+                    </a>
+                    <a href="https://discordapp.com/users/harsha05985" target="_blank" class="social-card">
+                        <div class="social-icon">
+                            <svg fill="currentColor" viewBox="0 0 24 24" width="20" height="20">
+                                <path
+                                    d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z" />
+                            </svg>
+                        </div>
+                        <div class="social-info">
+                            <h4>Discord</h4>
+                            <span>harsha05985</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <div class="logo">Harsha <span>harsha6319@gmail.com</span></div>
+                <p>Web designer and front-end developer</p>
+            </div>
+            <div class="footer-socials">
+                <h3>Media</h3>
+                <div class="social-icons">
+                    <a href="https://github.com/Harsha6319" target="_blank" aria-label="GitHub"><svg fill="currentColor" viewBox="0 0 24 24" width="22" height="22">
+                            <path
+                                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                        </svg></a>
+                    <a href="https://www.linkedin.com/in/harsha-praneeth-446b1736b" target="_blank" aria-label="LinkedIn"><svg fill="currentColor" viewBox="0 0 24 24" width="22"
+                            height="22">
+                            <path
+                                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                        </svg></a>
+                    <a href="https://discordapp.com/users/harsha05985" target="_blank" aria-label="Discord"><svg fill="currentColor" viewBox="0 0 24 24" width="22"
+                            height="22">
+                            <path
+                                d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z" />
+                        </svg></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; Copyright 2022. Made by Harsha</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
