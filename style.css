@@ -571,7 +571,21 @@ body::after {
 .project-img.curr-bg {
     background-image: url('proj_curr.png');
 }
-
+.project-img.rtt-bg {
+    background-image: url('proj_rtt.png');
+}
+.project-img.restaurent-bg {
+    background-image: url('proj_restaurent.png');
+}
+.project-img.estate-bg{
+    background-image: url('proj_estate.png');
+}
+.project-img.portfolio-bg{
+    background-image: url('proj_portfolio.png');
+}
+.project-img.nexora-bg{
+    background-image: url('proj_nexora.png');
+}
 .project-tech {
     padding: 1rem;
     border-bottom: 1px solid rgba(255, 255, 255, 0.05);
