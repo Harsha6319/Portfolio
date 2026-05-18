@@ -15,12 +15,12 @@
 }
 
 .small_logo {
-    width: clamp(40px, 8vw, 60px);
-    height: clamp(40px, 8vw, 60px);
+    width: 60px;
+    height: 60px;
     object-fit: cover;
     position: absolute;
-    top: clamp(20px, 5vh, 50px);
-    left: clamp(0px, 2vw, 10px);
+    top: 50px;
+    left: 0;
     z-index: 10;
 }
 
@@ -1045,6 +1045,10 @@ footer {
 }
 
 @media (max-width: 768px) {
+    .small_logo {
+        display: none;
+    }
+
     .navbar {
         width: 90%;
         gap: 0.5rem;
