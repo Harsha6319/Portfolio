@@ -20,7 +20,7 @@
     object-fit: cover;
     position: absolute;
     top: 50px;
-    margin-left: auto;
+    left: 0;
 }
 
 .menu-toggle {
