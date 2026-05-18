@@ -19,9 +19,7 @@
     height: 60px;
     object-fit: cover;
     position: absolute;
-    top: 20px;
-    right: 5%;
-    z-index: 10;
+    top: 50px;
 }
 
 .menu-toggle {
@@ -1207,7 +1205,6 @@ footer {
     .small_logo {
         width: 40px;
         height: 40px;
-        top: 20px;
     }
     
     .btn {
